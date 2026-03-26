@@ -1,7 +1,3 @@
-body {
-    background-image: url(/img/fundopreto.jpg);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +6,7 @@ body {
 
 body {
     font-family: "Lexend", sans-serif;
-    background-image: url(/img/fundopreto.jpg);
+    background-color: black;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -19,61 +15,61 @@ body {
     align-items: center;
 }
 
-/* container geral */
 .container {
     width: 90%;
     max-width: 400px;
     text-align: center;
-}
 
-/* logo */
-.logo h1 {
-    color: white;
-    font-size: 50px;
-    font-family: "Lexend", sans-serif;
-    pointer-events: none;
-}
-
-.logo p {
-    color: rgb(180, 180, 180);
-    font-size: 14px;
-    margin-bottom: 30px;
-    font-family: "Lexend", sans-serif;
-    pointer-events: none;
-}
-
-/* caixa de login */
-.login-box {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 1px 30px rgb(100, 98, 98);
-
-
-    /* título */
-
-    h2 {
-        color: white;
-        margin-bottom: 20px;
-        pointer-events: none;
-    }
-
-    .campos_cadastro {
-
-        text-align: start;
-
-        /* inputs */
-        input {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 6px;
-            outline: none;
+    .logo {
+        h1 {
+            color: white;
+            font-size: 50px;
+            font-family: "Lexend", sans-serif;
+            pointer-events: none;
         }
 
-        /* botão */
-        button {
+        p {
+            color: rgb(180, 180, 180);
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-family: "Lexend", sans-serif;
+            pointer-events: none;
+        }
+    }
+
+    .login-box {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 1px 30px rgb(100, 98, 98);
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+            pointer-events: none;
+        }
+
+        .campos_cadastro {
+            text-align: start;
+
+            p {
+                color: white;
+                margin-bottom: 5px;
+                font-size: 13px;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 15px;
+                border: none;
+                border-radius: 6px;
+                outline: none;
+            }
+        }
+
+        .cadastro {
+            margin-top: 10px;
             width: 100%;
             padding: 12px;
             background-color: #808080;
@@ -82,49 +78,31 @@ body {
             border-radius: 6px;
             cursor: pointer;
             transition: 0.3s;
-            text-decoration: none;
+
+            &:hover {
+                background-color: #5f5f5f;
+            }
         }
 
-        a {
-            text-decoration: none;
+        #mensagem {
+            display: none;
             color: #ffffff;
-
-        }
-
-        button:hover {
-            background-color: #5f5f5f;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: "Lexend", sans-serif;
+            font-size: 12px;
         }
     }
 }
 
-/* RESPONSIVO EXTRA */
 @media (max-width: 600px) {
-    .logo h1 {
-        font-size: 35px;
+    .container {
+        .logo h1 {
+            font-size: 35px;
+        }
+
+        .login-box {
+            padding: 20px;
+        }
     }
-
-    .login-box {
-        padding: 20px;
-    }
-}
-
-.cadastro {
-    margin-top: 10px;
-    width: 100%;
-    padding: 12px;
-    background-color: #808080;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#mensagem {
-    display: none;
-    color: #ffffff;
-    margin-top: 10px;
-    font-weight: bold;
-    font-family: "Lexend", sans-serif;
-    font-size: 12px;
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinSight</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #151515;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgb(12, 12, 12);
+    box-shadow: 0 2px 10px rgb(69, 68, 68);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+}
+
+/* CARD PRINCIPAL */
+.card {
+    background: linear-gradient(135deg, #1f1f20, #929494);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* LINKS CLICÁVEIS */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.link-box {
+    background: rgba(246, 244, 244, 0.15);
+    padding: 10px 15px;
+    border-radius: 10px;
+   
+    pointer-events: none;
+}
+
+.link-box:hover {
+    background: white;
+}
+
+/* SALDO */
+.saldo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* META */
+.meta {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+     transition: 0.3s;
+}
+
+a:hover{
+    background-color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .saldo {
+        font-size: 22px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">FinSight</div>
+    <div class="user-icon"></div>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        
+        <div class="links">
+            <div class="link-box">
+                Saldo Atual
+            </div>
+
+            <a href="/src/meta.html"><div class="link-box" onclick="alert('Meta Financeira')">
+                Meta Financeira
+            </div></a>
+        </div>
+
+        <div class="saldo">R$ 5.250,00</div>
+        <div class="meta">Meta: R$ 10.000,00</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

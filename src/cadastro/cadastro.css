@@ -47,6 +47,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     border-radius: 12px;
+    box-shadow: 0 1px 30px rgb(100, 98, 98);
+
 
     /* título */
 

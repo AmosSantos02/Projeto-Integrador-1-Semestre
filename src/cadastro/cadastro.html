@@ -25,7 +25,7 @@
 
             <div class="campos_cadastro">
                 <p>Digite seu nome:</p>
-                <input type="text" placeholder="Ex: Gustavo da Silva">
+                <input type="text" id="nome" placeholder="Ex: Gustavo da Silva">
 
                 <p>Data de nascimento:</p>
                 <input type="date" id="dataNascimento" name="dataNascimento" required>
@@ -34,10 +34,10 @@
                 <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" required>
 
                 <p>Digite sua senha:</p>
-                <input type="password" placeholder="Senha">
+                <input type="password" class="senha" placeholder="Senha">
 
                 <p>Confirme a senha digitada:</p>
-                <input type="password" placeholder="Confirme a Senha">
+                <input type="password" class="senha" placeholder="Confirme a Senha">
             </div>
 
             <button class="cadastro" id="btnCadastro">Cadastre-se</button>
@@ -53,10 +53,17 @@
 
         const botao = document.getElementById("btnCadastro");
         const mensagem = document.getElementById("mensagem");
+        const nome = document.getElementById("nome");
+        const cpf = document.getElementById("cpf");
+        const senha = document.getElementsByClassName("senha");        
+
 
         botao.addEventListener("click", function () {
             if (!clicou) {
                 mensagem.style.display = "block";
+                if(nome != "" && cpf != "" && senha != ""){
+                    
+                }
                 clicou = true;
             } else {
                 window.location.href = "entrar.html";

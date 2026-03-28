@@ -86,7 +86,7 @@ background: radial-gradient(circle at 35% 30%, #888 0%, #333 15%, #111 45%, #000
             }
         }
 
-        #mensagem {
+        #mensagem_cadastro_criado {
             display: none;
             color: #ffffff;
             margin-top: 10px;
@@ -94,6 +94,25 @@ background: radial-gradient(circle at 35% 30%, #888 0%, #333 15%, #111 45%, #000
             font-family: "Lexend", sans-serif;
             font-size: 12px;
         }
+        
+        #mensagem_cadastro_erro_dados {
+            display: none;
+            color: #ffffff;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: "Lexend", sans-serif;
+            font-size: 12px;
+        }
+        
+        #mensagem_cadastro_erro_senha {
+            display: none;
+            color: #ffffff;
+            margin: 10px 0;
+            font-weight: bold;
+            font-family: "Lexend", sans-serif;
+            font-size: 12px;
+        }
+        
     }
 }
 

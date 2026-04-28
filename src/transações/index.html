@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="/src/assets/Icon_finsight.png">
+            <p>FinSight</p>
+        </div>
+        <div class="notificacao">
+            <img src="/src/assets/Icon_notificação.png">
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <h1>Transações</h1>
+            <search>
+                <div>
+                    <img src="/src/assets/Icon_lupa.png" alt="icone_lupa">
+                </div>
+                <label for="busca">Buscar transação</label>
+                <input type="text" id="busca" placeholder="Buscar transação...">
+            </search>
+
+            <nav>
+                <button>Todos</button>
+                <button>Receita</button>
+                <button>Despesa</button>
+            </nav>
+        </header>
+
+        <section class="valores">
+            <div id="valores_receita">
+                <p>Receita</p>
+                <h2>+ R$ 12.450,00</h2>
+            </div>
+            <div id="valores_despesa">
+                <p>Despesas</p>
+                <h2>- R$ 6.000,00</h2>
+            </div>
+        </section>
+
+        <section class="transacoes">
+            <p class="transacoes_data">TODAY</p>
+
+            <div class="movimentacao">
+                <div class="movimentacao_logo">
+                    <img src="/src/assets/Icon_grana.png">
+                </div>
+                <div class="movimentacao_name">
+                    <h2>Vale Maio</h2>
+                    <p>Salário</p>
+                </div>
+                <h3 class="movimentacao_valor">+ R$ 5.500,00</h3>
+            </div>
+
+            <div class="movimentacao">
+                <div class="movimentacao_logo">
+                    <img src="/src/assets/Icon_carrinho.png">
+                </div>
+                <div class="movimentacao_name">
+                    <h2>Mercado</h2>
+                    <p>Alimentação</p>
+                </div>
+                <h3 class="movimentacao_valor">- R$ 89,90</h3>
+            </div>
+
+
+            <p class="transacoes_data">14 DE MAIO</p>
+            <div class="movimentacao">
+                <div class="movimentacao_logo">
+                    <img src="/src/assets/Icon_carrinho.png">
+                </div>
+                <div class="movimentacao_name">
+                    <h2>Mercado</h2>
+                    <p>Alimentação</p>
+                </div>
+                <h3 class="movimentacao_valor">- R$ 89,90</h3>
+            </div>
+        </section>
+
+        <button id="create_transacao">
+                + Nova transação
+        </button>
+    </main>
+
+    <footer>
+        <nav>
+            <button>
+                <img src="">
+                <p>Dashboard</p>
+            </button>
+            <button>
+                <img src="">
+                <p>transações</p>
+            </button>
+            <button>
+                <img src="">
+                <p>Contas</p>
+            </button>
+            <button>
+                <img src="">
+                <p>Metas</p>
+            </button>
+            <button>
+                <img src="">
+                <p>Perfil</p>
+            </button>
+        </nav>
+    </footer>
+</body>
+
+</html>

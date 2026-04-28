@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    font-family: 'Public Sans';
+}
+
+body{
+    background-color:#14121B;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.125rem 1.5rem;
+    background-color: #1A1F2ECC;
+    color: white;
+
+    & .logo {
+        width: 1.1rem;
+        height: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+
+    }
+
+    & .notificacao img {
+        width: 1rem;
+        height: 1.25rem;
+    }
+
+}

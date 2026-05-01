@@ -2,13 +2,12 @@
 
 
 
-* {
+body {
     margin: 0;
+    color: white;
     font-family: 'Public Sans';
-}
-
-body{
-    background-color:#14121B;
+    background-color: #14121B;
+    height: 200vh;
 }
 
 .cabecalho {
@@ -17,6 +16,7 @@ body{
     padding: 1.125rem 1.5rem;
     background-color: #1A1F2ECC;
     color: white;
+    margin-bottom: .95rem;
 
     & .logo {
         width: 1.1rem;
@@ -33,5 +33,199 @@ body{
         width: 1rem;
         height: 1.25rem;
     }
+}
 
+main {
+    padding: 0 1.25rem;
+
+    & search {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2B2932;
+        padding: .5rem;
+        border-radius: .5rem;
+        gap: .2rem;
+        margin: 1rem 0;
+
+        & #busca {
+            background-color: #2B2932;
+            border: none;
+            width: 100%;
+            outline: none;
+        }
+    }
+
+    & nav.filtros {
+        background-color: #0F0D16;
+        border-radius: .75rem;
+        margin-bottom: 1.75rem;
+
+
+        & .filtro {
+            width: 7.063rem;
+            height: 2.25rem;
+            background-color: transparent;
+            color: #C9C4D8;
+            border: none;
+            cursor: pointer;
+        }
+
+        & .filtro_ativo {
+            width: 7.063rem;
+            ;
+            height: 2.25rem;
+            border-radius: .5rem;
+            background-color: #947DFF;
+            color: #2B0088;
+        }
+    }
+
+    & .valores {
+        display: flex;
+        justify-content: space-around;
+
+        & p {
+            font-size: .75rem;
+            color: #938EA1;
+            margin-bottom: .25rem;
+        }
+
+
+        & h2 {
+            font-size: 1.125rem;
+            font-family: 'JetBrains Mono';
+        }
+
+        & #valores_receita {
+            padding: 1rem;
+            background-color: #23294066;
+            border-radius: .7rem;
+            width: 30vw;
+            min-width: 30vw;
+
+            & h2 {
+                color: #CABEFF;
+            }
+        }
+
+        & #valores_despesa {
+            padding: 1rem;
+            background-color: #23294066;
+            border-radius: .7rem;
+
+            & h2 {
+                color: #FFB4AB;
+            }
+        }
+    }
+
+    & .transacoes {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+
+        & .transacoes_data {
+            margin-top: 2rem;
+            font-weight: bold;
+            font-size: .875rem;
+            color: #938EA1;
+        }
+
+        & .movimentacao {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #23294066;
+            padding: 1rem;
+            border-radius: 1rem;
+
+            & .movimentacao_esquerda {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            & .movimentacao_logo {
+                padding: .6rem;
+                background-color: #CABEFF1A;
+                border-radius: .75rem;
+
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            & .movimentacao_name {
+                & h2 {
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+
+                & p {
+                    font-size: .75rem;
+                    color: #938EA1;
+                }
+            }
+        }
+    }
+
+    & #create_transacao {
+        position: fixed;
+        bottom: 6rem;
+        right: 1.5rem;
+        background: #7c3aed;
+        color: white;
+        border: none;
+        border-radius: 16px;
+        padding: 16px 24px;
+        font-size: 1rem;
+        cursor: pointer;
+        z-index: 100;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1a1a2e;
+    padding: 12px 0 8px;
+    position: fixed;
+    z-index: 100;
+
+    & #navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    & .nav_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        cursor: pointer;
+        color: #64748B !important;
+        padding: 6px 10px;
+        border-radius: 12px;
+
+        & svg {
+            width: 24px;
+            height: 24px;
+            color: inherit !important;
+        }
+
+        & span {
+            font-size: 11px;
+        }
+
+        &.active {
+            color: #7C5CFC !important;
+            background: rgba(124, 92, 252, 0.15) !important;
+        }
+    }
 }
